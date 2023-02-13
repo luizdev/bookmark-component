@@ -1,6 +1,7 @@
 import "antd/dist/reset.css";
 import "./App.css";
 import { Layout, Col, Row } from "antd";
+import CardListComponent from "./components/cardList/index";
 import CardComponent from "./components/card/index";
 const {  Content, Footer } = Layout;
 
@@ -21,7 +22,7 @@ function App() {
                 <CardComponent radius="borderRadius2"></CardComponent>
               </Col>
               <Col span={8}>
-                <CardComponent radius="borderRadius2"></CardComponent>
+                <CardListComponent radius="borderRadius2"></CardListComponent>
               </Col>
             </Row>
           </div>
