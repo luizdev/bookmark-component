@@ -1,8 +1,11 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import {
+  RightOutlined
+} from '@ant-design/icons';
 import { Avatar, List } from 'antd';
-import { CustomCardList, CustomCardListBody, ListHead } from "./styles";
+import { CustomCardList, CustomCardListBody, ListHeader, ListFooter } from "./styles";
 
 const borderRadius = {
   borderRadius0: "0",
@@ -33,10 +36,10 @@ const CardListComponent = ({ radius, color }) => (
     radius={radius}
     bodyStyle={CustomCardListBody}
   >
-    <ListHead>
+    <ListHeader className="listHead">
       <h3>Title</h3>
       <h4>Subtitle</h4>
-    </ListHead>
+    </ListHeader>
     <List
       itemLayout="horizontal"
       dataSource={data}
@@ -50,6 +53,9 @@ const CardListComponent = ({ radius, color }) => (
         </List.Item>
       )}
     />
+    <ListFooter>
+      <a href="/#">Otras selecciones<RightOutlined /></a>
+    </ListFooter>
 
   </CustomCardList>
 );

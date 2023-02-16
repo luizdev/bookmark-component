@@ -19,7 +19,9 @@ function App() {
           >
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               <Col span={16}>
-                <CardComponent radius="borderRadius2"></CardComponent>
+                <CardComponent radius="borderRadius2">
+
+                </CardComponent>
               </Col>
               <Col span={8}>
                 <CardListComponent radius="borderRadius2"></CardListComponent>

@@ -16,7 +16,7 @@ const CardComponent = ({ radius }) => (
     hoverable
     radius={radius}
     bodyStyle={CustomCardBody}
-  >dddd
+  >
 
   </CustomCard>
 );

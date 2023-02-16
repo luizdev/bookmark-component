@@ -3,6 +3,7 @@ import styledMap from "styled-map";
 import { Card } from "antd";
 
 export const CustomCardList = styled(Card)`
+  font-family: 'Open Sans', sans-serif;
   border-radius: ${styledMap("radius", {
     borderRadius0: "0",
     borderRadius1: "4px",
@@ -16,11 +17,21 @@ export const CustomCardList = styled(Card)`
     }
   }
 `;
-export const ListHead = styled('div')`
-  padding: 8px 12px;
-  h3{
 
+export const ListHeader = styled('div')`
+  padding: 12px 12px;
+  h3{
+    font-weight: 500;
+    margin: 0;
   }
+  h4{
+    font-weight: 300;
+    margin: 0;
+  }
+`
+
+export const ListFooter = styled('div')`
+  padding: 16px 12px;
 `
 
 export const CustomCardListBody = {

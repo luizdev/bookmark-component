@@ -6,9 +6,8 @@ import CardComponent from './index'
  * CardComponent UI component for user interaction
  */
 export default {
-  title: 'Example/CardComponent',
+  title: 'CardComponent',
   component: CardComponent,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     radius: {
       control: {
@@ -22,7 +21,6 @@ export default {
 const Template = (args) => <CardComponent {...args} />;
 
 export const Radius = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Radius.args = {
   radius: 'borderRadius0'
 };
