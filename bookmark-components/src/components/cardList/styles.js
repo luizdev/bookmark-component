@@ -32,6 +32,16 @@ export const ListHeader = styled('div')`
 
 export const ListFooter = styled('div')`
   padding: 16px 12px;
+  a{
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5;
+    .anticon{
+      position: relative;
+      top: 2px;
+      margin-left: 5px;
+    }
+  }
 `
 
 export const CustomCardListBody = {
